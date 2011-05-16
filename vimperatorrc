@@ -1,0 +1,11 @@
+noremap gm :tabopen mail.google.com
+noremap gr :tabopen www.google.com/reader
+noremap gc :tabopen www.google.com/calendar
+noremap gf :tabopen www.google.com.hk/finance?hl=zh-cn&tab=we
+noremap <leader>tx :tabopen xbeta.info
+noremap <leader>te :tabopen xbeta.info/wp-admin
+noremap = +
+noremap fnews :tabopen www.nbd.com.cn
+:map J <C-d>
+:map K <C-u>
+:se gui=tabs

@@ -1,0 +1,54 @@
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# some more ls aliases
+alias ll='ls -lh'
+alias la='ls -A'
+alias l='ls -CF'
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ~='cd ~'
+alias grep='grep --color'
+alias go=gnome-open
+
+# alias e="emacs -q -nw -eval \"(progn (setq inhibit-startup-message t)(global-font-lock-mode t))\""
+# alias ee="emacs -q -nw --no-site -eval \"(progn (setq inhibit-startup-message t)(global-font-lock-mode t))\""
+# export VISUAL="emacs -q -nw -eval \"(progn (setq inhibit-startup-message t)(global-font-lock-mode t))\""
+# export EDITOR="emacs -q -nw -eval \"(progn (setq inhibit-startup-message t)(global-font-lock-mode t))\""
+
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+
+
+# export PS1="\u:\w\$"
+# export PS1='\[\033k\033\\\]\u:\w\n\$ 
+export PS1='\[\e[0;32m\]\w\n\[\e[0;37m\]\u\$ '
+
+# export HISTIGNORE="&:ls:ls *:ll:ll *:[bf]g:exit"
+export HISTFILESIZE=1000000000
+export HISTSIZE=1000000
+
+stty -ixon
+
+
+# alias hadoop-streaming="hadoop jar $HADOOP_HOME/hadoop-streaming.jar"
+# alias emacs='LC_CTYPE="zh_CN.UTF-8" emacs'
+
+#export JAVA_HOME=/usr/lib/jvm/default-jdk
+export JAVA_HOME=/home/anson/applications/java/current
+export HADOOP_HOME="/home/anson/applications/hadoop/core/current"
+export PIG_HOME="/home/anson/applications/hadoop/pig/current"
+export SQOOP_HOME="/home/anson/applications/hadoop/sqoop/current"
+export HBASE_HOME="/home/anson/applications/hadoop/hbase/current"
+export ZOOKEEPER_HOME="/home/anson/applications/hadoop/zookeeper/current"
+export JRUBY_HOME="/opt/jruby"
+PATH="$JAVA_HOME/bin:$JRUBY/bin:$HADOOP_HOME/bin:$PIG_HOME/bin:$SQOOP_HOME/bin:$HBASE_HOME/bin:$ZOOKEEPER_HOME/bin:$PATH"
+set -o vi

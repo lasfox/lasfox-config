@@ -1,0 +1,22 @@
+# +AMDG
+vbell off
+startup_message off
+hardstatus alwayslastline
+hardstatus string '%{= kG}[%= %{= kw}%?%-Lw%?%{B}%n*%f%t%?(%u)%?%{w}%?%+Lw%?%?%= %{g}][%{B}%d/%m %{G}%c]'
+
+
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+#caption always
+#caption string "%{= kB}%-Lw%{=s kB}%50>%n%f* %t %{-}%+Lw%<"
+# open programs with escape plus the binding; also names tab
+#bind m screen -t 'Mutt' 7
+screen -t 'Local' 1
+screen -t '61.151.255.7' 7
+#bind s screen -t 'Snownews' 8
+screen -t '61.172.206.60' 8
+# avoid screen conflicting with vi bindings; basically,
+# whenever it sees "escape", screen waits for more
+# characters, and only passes the escape to the program
+# after a short pause; this sets the pause to zero
+maptimeout 0
+defc1 off
