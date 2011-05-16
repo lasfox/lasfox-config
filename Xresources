@@ -1,0 +1,43 @@
+! XTerm*font: -*-fixed-medium-r-*-*-18-*-*-*-*-*-iso8859-*
+
+XTerm*locale: true
+XTerm*utf8Title: true
+XTerm*fontMenu*fontdefault*Label: Default
+
+!! XTerm*faceName: Courier 10 Pitch
+!! XTerm*faceName: Monaco
+XTerm*faceName: DejaVu Sans Mono Book
+!! XTerm*faceName: Inconsolata
+XTerm*faceNameDoublesize: WenQuanYi MicroHei Mono
+!! XTerm*faceNameDoublesize: SimSun
+XTerm*faceSize: 13
+XTerm.cjkWidth:true
+
+
+XTerm*background: black
+XTerm*foreground: white
+
+!! By default, XTerm composes special chars with META. With this setting I can work my readline magic instead.
+XTerm*metaSendsEscape: true
+
+XTerm*VT100.translations: #override \
+<Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)\n\
+Ctrl <Key>y: insert-selection(CLIPBOARD)
+
+
+!! XTerm*VT100.translations: #override \
+!! Ctrl <Key>n: scroll-forw(1,line) \n\
+!! Ctrl <Key>p: scroll-back(1,line) \n\
+!! Ctrl <Key>v: scroll-forw(1,page) \n\
+!! Alt <Key>v: scroll-back(1,page)
+
+
+XTerm*geometry: 80x35
+
+XTerm*saveLines: 5000
+
+XTerm*loginShell: true
+
+XTerm*visualBell: false
+
+
