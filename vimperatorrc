@@ -8,4 +8,5 @@ noremap = +
 noremap fnews :tabopen www.nbd.com.cn
 :map J <C-d>
 :map K <C-u>
-:se gui=tabs
+:set gui=none
+:set gui=tabs

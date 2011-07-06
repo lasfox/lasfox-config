@@ -42,13 +42,14 @@ stty -ixon
 # alias hadoop-streaming="hadoop jar $HADOOP_HOME/hadoop-streaming.jar"
 # alias emacs='LC_CTYPE="zh_CN.UTF-8" emacs'
 
-#export JAVA_HOME=/usr/lib/jvm/default-jdk
-export JAVA_HOME=/home/anson/applications/java/current
+export JAVA_HOME=/usr/lib/jvm/default-java
+#export JAVA_HOME=/home/anson/applications/java/current
 export HADOOP_HOME="/home/anson/applications/hadoop/core/current"
 export PIG_HOME="/home/anson/applications/hadoop/pig/current"
 export SQOOP_HOME="/home/anson/applications/hadoop/sqoop/current"
 export HBASE_HOME="/home/anson/applications/hadoop/hbase/current"
 export ZOOKEEPER_HOME="/home/anson/applications/hadoop/zookeeper/current"
 export JRUBY_HOME="/opt/jruby"
-PATH="$JAVA_HOME/bin:$JRUBY/bin:$HADOOP_HOME/bin:$PIG_HOME/bin:$SQOOP_HOME/bin:$HBASE_HOME/bin:$ZOOKEEPER_HOME/bin:$PATH"
+PATH="/var/lib/gems/1.8/bin:$JAVA_HOME/bin:$JRUBY/bin:$HADOOP_HOME/bin:$PIG_HOME/bin:$SQOOP_HOME/bin:$HBASE_HOME/bin:$ZOOKEEPER_HOME/bin:$PATH"
 set -o vi
+xrdb -load ~/.Xresources

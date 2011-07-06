@@ -10,7 +10,7 @@ XTerm*faceName: DejaVu Sans Mono Book
 !! XTerm*faceName: Inconsolata
 XTerm*faceNameDoublesize: WenQuanYi MicroHei Mono
 !! XTerm*faceNameDoublesize: SimSun
-XTerm*faceSize: 13
+XTerm*faceSize: 12
 XTerm.cjkWidth:true
 
 

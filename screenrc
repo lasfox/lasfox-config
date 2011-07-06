@@ -11,6 +11,7 @@ termcapinfo xterm|xterms|xs|rxvt ti@:te@
 # open programs with escape plus the binding; also names tab
 #bind m screen -t 'Mutt' 7
 screen -t 'Local' 1
+screen -t 'Other' 2
 screen -t '61.151.255.7' 7
 #bind s screen -t 'Snownews' 8
 screen -t '61.172.206.60' 8
